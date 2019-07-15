@@ -17,6 +17,7 @@ sub.addEventListener('click', () => {
 
 //turn h1 text red if number is negative
 const checkNegative = () => {
+  if (isNaN(parseInt(h1Total.innerText))) h1Total.innerText = '0';
   if (parseInt(h1Total.innerText) < 0) h1Total.classList.add('red');
   else h1Total.classList.remove('red');
 }
